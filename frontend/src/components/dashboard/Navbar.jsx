@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAuth } from '../../context/authContext';
+import { useAuth } from '../../context/AuthContext';
 import { useState } from 'react';
 import Logo from "../../assets/icon.ico";
 import { FaUsersCog } from "react-icons/fa";
