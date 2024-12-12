@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaTasks, FaChartLine, FaRegCalendarCheck, FaUsers, FaHandshake } from "react-icons/fa";
-import { useAuth } from '../../context/authContext';
+import { useAuth } from '../../context/AuthContext';
 
 
 const EmployeeDashboard = () => {
