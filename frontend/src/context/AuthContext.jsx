@@ -54,4 +54,4 @@ const AuthContext = ({ children }) => {
 };
 
 export const useAuth = () => useContext(userContext);
-export default authContext;
+export default AuthContext;
