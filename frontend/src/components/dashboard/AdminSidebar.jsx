@@ -97,7 +97,7 @@ const AdminSidebar = () => {
 
         {/* Sales Link */}
         <NavLink
-          to="/admin-dashboard/sales"
+          to="/admin-dashboard/demos"
           className={({ isActive }) =>
             `${
               isActive ? "bg-gray-900" : ""
@@ -105,7 +105,7 @@ const AdminSidebar = () => {
           }
         >
           <FaMoneyBillWave className="mr-4" />
-          {isSidebarOpen && <span>Sales</span>}
+          {isSidebarOpen && <span>Demos</span>}
         </NavLink>
 
         {/* Reports Link */}
@@ -213,7 +213,7 @@ const AdminSidebar = () => {
 
         {/* Settings Link */}
         <NavLink
-          to="/admin-dashboard/settings"
+          to="/admin-dashboard/setting"
           className={({ isActive }) =>
             `${
               isActive ? "bg-gray-900" : ""

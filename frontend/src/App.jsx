@@ -22,7 +22,7 @@ import ViewSalary from "./components/salary/View";
 import Summary from './components/EmployeeDashboard/Summary'
 import LeaveList from './components/leave/List'
 import AddLeave from './components/leave/Add'
-import Setting from "./components/EmployeeDashboard/Setting";
+// import Setting from "./components/EmployeeDashboard/Setting";
 import Table from "./components/leave/Table";
 import Detail from "./components/leave/Detail";
 import ViewLead from "./components/lead/ViewLead";
@@ -35,6 +35,11 @@ import ListDeal from "./components/deal/ListDeal"
 //For report
 import Reports from "./components/report/Report";
 import Meetings from "./components/meeting/Meeting";
+
+import Setting from "./components/setting/Setting";
+
+import Demos from "./components/demo/Demo";
+import Clients from "./components/client/Client";
 
 function App() {
   return (
@@ -79,11 +84,33 @@ function App() {
 
           {/* route for report */}
 
-          
+
           <Route
             path="/admin-dashboard/reports"
             element={<Reports />}
           ></Route>
+          {/* route for setting  */}
+
+          <Route
+            path="/admin-dashboard/setting"
+            element={<Setting />}
+          ></Route>
+
+          {/* route for demo */}
+
+          <Route
+            path="/admin-dashboard/demos"
+            element={<Demos />}
+          ></Route>
+
+          {/*route for Client */}
+
+          <Route
+            path="/admin-dashboard/clients"
+            element={<Clients />}
+          ></Route>
+
+
 
           {/* route for meeting */}
 

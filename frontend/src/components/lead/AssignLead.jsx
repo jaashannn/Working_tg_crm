@@ -14,7 +14,7 @@ const AssignLead = () => {
     // Fetch the lead details
     const fetchLeadDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/lead/${id}`, {
+        const response = await axios.get(`https://working-tg-crm.onrender.com/api/lead/${id}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
         if (response.data.success) {
@@ -30,7 +30,7 @@ const AssignLead = () => {
     // Fetch the list of employees
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/employee", {
+        const response = await axios.get("https://working-tg-crm.onrender.com/api/employee", {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
         });
         if (response.data.success) {
@@ -56,7 +56,7 @@ const AssignLead = () => {
     setIsSubmitting(true);
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/lead/assign/${id}`,
+        `https://working-tg-crm.onrender.com/api/lead/assign/${id}`,
         { employeeId: selectedEmployee },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

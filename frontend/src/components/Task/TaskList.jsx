@@ -16,7 +16,7 @@ const TaskList = ({ employeeId }) => {
       setTaskLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/lead/Tasks`,
+          `https://working-tg-crm.onrender.com/api/lead/Tasks`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -55,7 +55,7 @@ export const columns = [
 export const fetchLeads = async () => {
   let leads;
   try {
-    const response = await axios.get("http://localhost:5000/api/lead", {
+    const response = await axios.get("https://working-tg-crm.onrender.com/api/lead", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
